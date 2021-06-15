@@ -15,8 +15,8 @@ contract Token{
 
 
     uint public totalSupply = 150000000 * 10 ** 18;
-    string public name = "freedom.finance";
-    string public symbol = "idkyet";
+    string public name = "caishen.finance";
+    string public symbol = "CFI";
     uint public decimals = 18;
     
     event Transfer(address indexed from, address indexed to, uint value);
