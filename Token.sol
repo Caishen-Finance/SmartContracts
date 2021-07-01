@@ -32,7 +32,7 @@ contract Token{
         if (block.timestamp >= lockedAmount[msg.sender].time_locked){
             lockedAmount[msg.sender].time_locked = 0;
         }
-        require(balances[msg.sender]- lockedAmount[msg.sender].value>= value, "Sorry you dont have enough tokens");
+        require(balances[msg.sender]- lockedAmount[msg.sender].value>= value, "Sorry you dont have enough tokens or Your tokens are locked");
         balances[to] += value;
         balances[msg.sender] -= value;
         emit Transfer(msg.sender,to,value);
