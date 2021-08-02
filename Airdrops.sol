@@ -5,7 +5,7 @@ import "./Token.sol";
 
 contract Airdrops is Token {
 
-    address airDropAddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; // to test;
+    address airDropAddress = 0x61db7035029112Ed38BAf3E0DB8033B126eBbB7b; // to test;
     address[] internal listOfWinners;
     uint public time;
     uint public withdrawTime;
